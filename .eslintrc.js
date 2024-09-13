@@ -1,8 +1,10 @@
+/* eslint-disable prettier/prettier */
+
 module.exports = {
   parser: "@typescript-eslint/parser", // Define o parser para TypeScript
   parserOptions: {
     ecmaVersion: 2020, // Usa a versão do ECMAScript GIAN: "latest"
-    sourceType: "module", // Permite o uso de import/export
+    sourceType: 'module', // Permite o uso de import/export
   },
   plugins: [
     // Lista os plugins usados
