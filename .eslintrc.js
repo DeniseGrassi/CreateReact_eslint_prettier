@@ -1,23 +1,23 @@
-/* eslint-disable prettier/prettier */
+
 
 module.exports = {
   parser: "@typescript-eslint/parser", // Define o parser para TypeScript
   parserOptions: {
     ecmaVersion: 2020, // Usa a versão do ECMAScript GIAN: "latest"
-    sourceType: 'module', // Permite o uso de import/export
+    sourceType: "module" // Permite o uso de import/export
   },
   plugins: [
     // Lista os plugins usados
     "react",
     "@typescript-eslint",
     "react-hooks",
-    // 'prettier'
+    "prettier"
   ],
   extends: [
     "eslint:recommended", // Inclui as regras recomendadas do ESLint
     "plugin:react/recommended", // Inclui as regras recomendadas para React
     "plugin:@typescript-eslint/recommended", // Inclui as regras recomendadas para TypeScript
-    "plugin:prettier/recommended",
+    "plugin:prettier/recommended"
   ],
   rules: {
     "react/react-in-jsx-scope": "off", // Desativa a regra que exige 'React' no escopo para JSX
@@ -26,18 +26,20 @@ module.exports = {
     // // Regras do plugin react-hooks
     "react-hooks/rules-of-hooks": "error", // Verifica as regras de chamada de hooks
     "react-hooks/exhaustive-deps": "warn", // Verifica as dependências dos hooks
-    // 'prettier/prettier': ['error']
+    "prettier/prettier": ['error']
   },
   env: {
     browser: true, // Configura o ambiente do navegador
     jest: true, // Configura o ambiente para Jest (testes)
-    node: true,
+    node: true
   },
   settings: {
     react: {
-      version: "detect", // Detecta automaticamente a versão do React
-    },
+      version: "detect" // Detecta automaticamente a versão do React
+    }
   },
+
+
 }
 
 // import globals from "globals";
